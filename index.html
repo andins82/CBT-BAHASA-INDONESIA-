@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBT Bahasa Indonesia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-page" class="page active">
+    <div class="login-container">
+      <h1 class="welcome-title">SELAMAT DATANG</h1>
+      <p class="welcome-sub">Silahkan login terlebih dahulu</p>
+      <div class="login-box">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Masukkan username">
+        
+        <label for="password">Password</label>
+        <div class="password-row">
+          <input type="password" id="password" placeholder="Masukkan password">
+          <button id="toggleEye" class="eye">👁️</button>
+        </div>
+        
+        <button id="loginBtn" class="login-btn">Masuk</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="exam-page" class="page">
+    <div class="topbar">
+      <h2>Ujian CBT Bahasa Indonesia</h2>
+      <div id="timer" class="timer">60:00</div>
+    </div>
+
+    <div id="question-box" class="question-box"></div>
+
+    <div class="nav-buttons">
+      <button id="prevBtn" class="btn secondary">← Sebelumnya</button>
+      <button id="nextBtn" class="btn">Selanjutnya →</button>
+    </div>
+  </div>
+
+  <div id="result-page" class="page">
+    <div class="result-container">
+      <h2>Hasil Ujian</h2>
+      <div id="score" class="score">0</div>
+      <button id="logoutBtn" class="btn secondary">Kembali ke Login</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
